@@ -1,11 +1,9 @@
-import { redirect } from 'next/navigation';
 import { MetricsGrid } from "@/components/dashboard/metrics-grid";
 import { PerformanceChart } from "@/components/dashboard/performance-chart";
 import { RecentVideos } from "@/components/dashboard/recent-videos";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function Home() {
-  redirect('/login');
+export default function DashboardPage() {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
